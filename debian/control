@@ -1,0 +1,32 @@
+Source: node-hash-test-vectors
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Build-Depends:
+ debhelper-compat (= 12)
+ , dh-buildinfo
+ , nodejs (>= 6)
+Standards-Version: 4.5.0
+Homepage: https://github.com/crypto-browserify/hash-test-vectors
+Vcs-Git: https://salsa.debian.org/js-team/node-hash-test-vectors.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-hash-test-vectors
+
+Package: node-hash-test-vectors
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Multi-Arch: foreign
+Description: test vectors for hashes
+ This module includes test vectors for various hash and
+ cryptographic function. This test vectors are ready to use
+ and packaged as JSON data.
+ .
+ This package is used for testsuite of another Node.js modules.
+ .
+ JavaScript Object Notation or JSON is an open-standard format that uses
+ human-readable text to transmit data objects consisting of
+ attribute–value pair.
+ .
+ Node.js is an event-based server-side JavaScript engine.

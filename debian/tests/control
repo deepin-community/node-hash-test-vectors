@@ -1,0 +1,2 @@
+Tests: require
+Depends: node-hash-test-vectors, nodejs (>= 6)
